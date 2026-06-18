@@ -1,0 +1,15 @@
+2. Dhoni once wished to join a a reputed Cricket Coaching Camp to be held at a place "X" kms away from his house. He told about this to his father and got his consent to use his friend's bike for the Camp. The Camp was to be held on all days of the month. His friend's bike provides a mileage of Y km/litre and the cost of petrol was Rs. Z. Dhoni's father now wanted to know the total amount that was needed by Dhoni to spend on his travel to the Camp. Help him find the same and assume number of days in a month as 30 days.
+
+Code:
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double x = scan.nextInt();
+        double y = scan.nextInt();
+        double z = scan.nextInt();
+        double total = (x*30*z)/y;
+        System.out.println(total);
+    }
+}

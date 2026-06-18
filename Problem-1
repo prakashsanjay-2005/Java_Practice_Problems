@@ -1,0 +1,16 @@
+1. Age Calculation:
+
+Assume Dhoni's current age is 6. After 3 years, Dhoni's mother Devki Devi would be 4 times Dhoni's age. What is Devki Devi's current age? Write a program to determine the same.
+
+Code:
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int dhoniage = scan.nextInt();
+        int motherage = 4*(dhoniage+3);
+        int currentmomage= motherage-3;
+        System.out.println(currentmomage);
+    }
+}

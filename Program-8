@@ -1,0 +1,27 @@
+8.Tickets
+The World Cup Finals was on April 2, 2011 and the expectations were set high upon the Men in Blue as they had made it to the Finals after 28 years. The Wankhede Stadium witnessed thousands of people queued up for hours to collect their tickets. Tickets for the match were selling for over ten times their normal selling price on the black market.
+
+There were two types of tickets - Class A (Upper Tier) and Class B(Lower Tier). "N" tickets were sold totally. Class A tickets cost Rs.X and Class B tickets cost Rs.Y. The total ticket amount collected at the end of the day is Rs. Z. Find the number of Class A and Class B tickets sold.
+
+Code:           
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int N = scan.nextInt();
+        int classA = scan.nextInt();
+        int classB = scan.nextInt();
+        int tot = scan.nextInt();
+        
+        int max = (N*classA)-tot;
+        int diff = classA-classB;
+        int Btic = max/diff;
+        int Atic = N - Btic;
+        
+
+        System.out.println(Btic);
+        System.out.println(Atic);
+    
+        
+    }
+}
